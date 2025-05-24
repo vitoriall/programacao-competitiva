@@ -1,31 +1,31 @@
 # Programação Competitiva - Lista de Prática
 
+Este repositório contém questões de prática de programação competitiva, nível iniciante e intermediário, para reforçar conceitos como operações matemáticas, condicionais, laços e manipulação de dados.
+
+---
+
 ## 📚 Lista 1 - Nível 1 e 2
 
 ---
 
-### ✅ Questão 1 - Média Ponderada Invertida
+### ✅ Questão 1 — Média Ponderada Invertida
 
 **Descrição:**  
-Calcule a média ponderada de três notas, onde os pesos são aplicados de forma invertida (5, 3, 2).
+Leia três valores correspondentes às notas de um aluno. Calcule a média ponderada invertida, onde os pesos são aplicados de forma contrária:  
+- O primeiro valor tem peso **5**.  
+- O segundo tem peso **3**.  
+- O terceiro tem peso **2**.  
+
+**Fórmula:**  
+media = (nota1 * 5 + nota2 * 3 + nota3 * 2) / 10
 
 **Entrada:**  
 Três números reais.
 
 **Saída:**  
-A média ponderada invertida com 1 casa decimal.  
-Formato:
-
-### ✅ Questão 3 - Converter Minutos
-**Descrição:**  
-Converta um valor em minutos para horas e minutos.
-
-**Entrada:**  
-Um inteiro representando minutos.
-
-**Saída:**  
-Formato:  
+Imprimir a média ponderada no formato:
 MEDIA = X.X
+Com **1 casa decimal**.
 
 **Exemplo:**  
 Entrada:
@@ -36,16 +36,20 @@ MEDIA = 7.1
 
 ---
 
-### ✅ Questão 2 - Distância 3D
+### ✅ Questão 2 — Distância 3D
 
 **Descrição:**  
 Calcule a distância entre dois pontos no espaço tridimensional.
 
+**Fórmula:**  
+distancia = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2)
+
 **Entrada:**  
-Seis números reais: `x1 y1 z1 x2 y2 z2`
+Seis números reais representando as coordenadas dos dois pontos:  
+`x1 y1 z1 x2 y2 z2`
 
 **Saída:**  
-A distância entre os pontos com 4 casas decimais.  
+A distância entre os pontos, com **4 casas decimais**.
 
 **Exemplo:**  
 Entrada:
@@ -61,13 +65,15 @@ Entrada:
 Saída:
 1.7321
 
-
 ---
 
-### ✅ Questão 3 - Converter Minutos
+### ✅ Questão 3 — Converter Minutos
 
 **Descrição:**  
-Converta um valor em minutos para horas e minutos.
+Dado um valor inteiro em minutos, converta para **horas e minutos**.
+
+**Regra:**  
+- 1 hora = 60 minutos
 
 **Entrada:**  
 Um número inteiro representando minutos.
@@ -85,7 +91,6 @@ Saída:
 2 hora(s)
 10 minuto(s)
 
-
 Outro exemplo:  
 Entrada:
 59
@@ -96,7 +101,7 @@ Saída:
 
 ---
 
-### ✅ Questão 4 - Verificar Intervalo Personalizado
+### ✅ Questão 4 — Verificar Intervalo Personalizado
 
 **Descrição:**  
 Dado um intervalo `[A, B]` e uma sequência de N números inteiros, determine quantos estão **dentro** (inclusive nas bordas) e quantos estão **fora** desse intervalo.
@@ -110,7 +115,6 @@ Dado um intervalo `[A, B]` e uma sequência de N números inteiros, determine qu
 X in
 Y out
 
-
 **Exemplo:**  
 Entrada:
 10 20
@@ -120,7 +124,6 @@ Entrada:
 Saída:
 3 in
 2 out
-
 
 Outro exemplo:  
 Entrada:
@@ -132,10 +135,9 @@ Saída:
 2 in
 2 out
 
-
 ---
 
-### ✅ Questão 5 - Quantos Acertaram?
+### ✅ Questão 5 — Quantos Acertaram?
 
 **Descrição:**  
 O jogo consiste em adivinhar um número secreto. Dado o número correto e as respostas de 5 competidores, determine quantos acertaram.
@@ -147,15 +149,14 @@ O jogo consiste em adivinhar um número secreto. Dado o número correto e as res
 **Saída:**  
 X acertaram
 
-
 **Exemplo:**  
+
 Entrada:
 42
 12 42 7 42 90
 
 Saída:
 2 acertaram
-
 
 Outro exemplo:  
 Entrada:
@@ -172,3 +173,31 @@ Saída:
 - As entradas sempre são válidas e seguem o padrão dos exemplos.
 
 ---
+
+## 🚀 Organização dos Arquivos
+/lista-1
+├── media-invertida.cpp
+├── distancia-3d.cpp
+├── converter-minutos.cpp
+├── intervalo-personalizado.cpp
+└── quantos-acertaram.cpp
+
+/testes
+├── media-invertida.txt
+├── distancia-3d.txt
+├── converter-minutos.txt
+├── intervalo-personalizado.txt
+└── quantos-acertaram.txt
+
+---
+
+## 👾 Objetivo
+Praticar lógica de programação, estrutura de dados simples e consolidar fundamentos para competições como:  
+- **Maratona SBC**  
+- **GEPC UFC**  
+- **Beecrowd**  
+- **Outras plataformas de juízes online**
+
+---
+
+🔥 Bora codar e subir pro GitHub! Bora ficar BRABO na programação competitiva! 💪🚀
